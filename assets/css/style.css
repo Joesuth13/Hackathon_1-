@@ -5,10 +5,15 @@ body {
   background-color: #222745;
 }
 
+/* Based on nav background colour */
+/* https://maketintsandshades.com/#452777 */
+
 .nav-link,
-.navbar-brand {
+.navbar-brand,
+.navbar-brand:hover {
   font-size: 24px;
-  color: #f8f9fa;
+  color: #ece9f1;
+  /* color: #ffd319; */
 }
 
 .navbar {
@@ -17,4 +22,12 @@ body {
 
 .navbar-toggler {
   border-color: #f8f9fa;
+}
+
+.nav-link:hover {
+  color: #a293bb;
+}
+
+.navbar-nav .nav-link.active {
+  color: #150c24;
 }
