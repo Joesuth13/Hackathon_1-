@@ -129,7 +129,7 @@ footer p{
   100% {
     /* Larger blur radius */
     text-shadow:   
-    0 0 5px #ffffffe8,
+    0 0 5px #ffffffb2,
       0 0 5px #ffffff88,
       0 0 20px #ffffffb9,
       0 0 30px #ffd5191f,
@@ -141,7 +141,7 @@ footer p{
  0% {
     /* A slightly smaller blur radius */
     text-shadow:
-    0 0 4.75px #ffffffb7,
+    0 0 4.75px #ffffff88,
     0 0 4px #ffffff88,
     0 0 18px #ffffffb9,
     0 0 28px #ffd5191f,
