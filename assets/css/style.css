@@ -5,11 +5,16 @@ body {
   background-color: #222745;
 }
 
-.navigation-text, .navigation-text li a {
+.nav-link,
+.navbar-brand {
   font-size: 24px;
-  color: #f8f9fa !important;
+  color: #f8f9fa;
 }
 
-#nav {
+.navbar {
   background-color: #452777;
+}
+
+.navbar-toggler {
+  border-color: #f8f9fa;
 }
