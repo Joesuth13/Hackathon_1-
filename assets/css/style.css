@@ -1,15 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+ /* ------------------------------ Colors ----------------------------------  
+Yellow: #ffd319 | Background grey/blue: #222745 | Dark purple: #452777 | Orange: #ff901f | Bright Purple: #b000ff | Pink: #ff2975
+*/
+
 body {
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
   background-color: #222745;
+  color: #ffd319;
+  height: 100vh;
 }
 
 .navigation-text, .navigation-text li a {
   font-size: 24px;
-  color: #f8f9fa !important;
+  color: #ffd319 !important;
 }
 
 #nav {
   background-color: #452777;
+}
+
+
+
+/* -------------------------------------------- Game container ---------------------------------------------------*/
+
+#gameContainer{
+  height: 90vh;
+}
+
+/* --------------------------------------------- Footer ---------------------------------------------------------*/
+footer {
+  background-color: #452777;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  
+  width: 100%;
+  margin-bottom: 0;
+
+}
+footer p{
+  margin-bottom: 0px;
+}
+#teamNames{
+  height: 100%;
+  width: 100%;
+  min-height: 7vh;
+}
+#teamNames li{
+  min-width: 90px;
+  max-width: 225px;
+  display: inline-block;
+}
+
+#teamNames li a {
+  display: flex;
+  
+  background-color: #222745;
+  color:#ffd319;
+  text-decoration: none; 
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  
+  padding-left: 0.25rem;
+}
+#teamNames li a span{
+
+  display: inline-block;
+  width: 100%;
+}
+
+
+#copyright{
+  font-size: 0.6rem;
+}
+#footer-label{
+  font-size: 0.7rem;
+  align-self: center;
+}
+
+/*------------------------------------------------- Media query overrides ------------------------------*/
+@media screen and (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 393px){
+
+#teamNames li{
+  min-width: 150px;
+  
+  
+}
+
 }
