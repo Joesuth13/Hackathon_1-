@@ -1,6 +1,6 @@
 # Project Title
 
-## Overview
+## Overview.
 
 ### Purpose
 A brief description of the project's purpose, what it aims to achieve, and the value it provides to the users.  
