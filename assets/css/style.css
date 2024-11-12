@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+body {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  background-color: #222745;
+}
+
+.navigation-text, .navigation-text li a {
+  font-size: 24px;
+  color: #f8f9fa !important;
+}
+
+#nav {
+  background-color: #452777;
+}
