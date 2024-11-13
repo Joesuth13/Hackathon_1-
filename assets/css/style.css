@@ -30,16 +30,39 @@ body {
 }
 /*----------------------------------------------- Navbar ---------------------------------------------------*/
 
+/* Based on nav background colour */
+/* https://maketintsandshades.com/#452777 */
 
-.navigation-text, .navigation-text li a {
+.nav-link,
+.navbar-brand,
+.navbar-brand:hover {
   font-size: 24px;
-  color: #ffd319 !important;
+  color: #ece9f1;
+  /* color: #ffd319; */
 }
 
-#nav {
+.navbar {
   background-color: #452777;
 }
 
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  color: #ece9f1;
+  font-size: 32px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link:hover {
+  color: #a293bb;
+}
+
+.navbar-nav .nav-link.active {
+  color: #150c24;
+}
 
 
 /* -------------------------------------------- Game container ---------------------------------------------------*/
