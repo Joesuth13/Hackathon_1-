@@ -4,7 +4,7 @@
 
 ### **Purpose**
 
-A brief description of the project's purpose, what it aims to achieve, and the value it provides to the users.
+
 
 The purpose of our project is to make a fun and engaging game for players. This Rock Paper Scissors game can be used to settle minor decisions, or simply to pass time. Users will be  playing interactively against the computer, getting constant feedback on their performance. We hope to keep players entertained by engaging all their senses e.g. with visuals and sound.
 
@@ -32,16 +32,35 @@ As a Player I can play against an opponent so that it works
 * JS function to pass win/loss/tie to score function
 
 **User Story 2:** 
+As a Player I can choose between gameplay options so that I can interact with the game 
 
-| As a Player I can choose between gameplay options so that I can interact with the game Acceptance criteria: Choice offered choice is played Pleasing design Basic click feedback Tasks: Create html to contain choices Style appropriately  Create JS event listeners to write to variable. |
-| :---- |
+**Acceptance criteria:**
+
+* Choice offered choice is played 
+* Pleasing design
+* Basic click feedback 
+
+**Tasks:**
+
+* Create html to contain choices 
+* Style appropriately
+* Create JS event listeners to write to variable. 
 
 ### **Should-Have User Stories**
 
-| User Story 1: As a Employer I can see the GitHub profiles of the developers so that I can further explore their work Acceptance criteria: Anchors clearly linking to developers GitHub profiles. Appropriately styled anchors that are eye catching and accessible. Footer does not obscure main content. Fixed footer. Tasks: Adapt Bootstrap footer example match games brand. Add FontAwesome for GitHub logo in GitHub profile anchors. |
-| :---- |
+### **User Story 1:**
+As a Employer I can see the GitHub profiles of the developers so that I can further explore their work 
 
-**User Story 2:**
+**Acceptance criteria:**
+* Anchors clearly linking to developers GitHub profiles. 
+* Appropriately styled anchors that are eye catching and accessible. 
+* Footer does not obscure main content. Fixed footer. 
+
+**Tasks:** 
+* Adapt Bootstrap footer example match games brand. 
+* Add FontAwesome for GitHub logo in GitHub profile anchors. 
+
+### **User Story 2:**
 
 As a Player I can access a navbar so that I change gamemode
 
@@ -58,7 +77,7 @@ As a Player I can access a navbar so that I change gamemode
 *  Class to represent active gamemode.  
 *  Source logo.
 
-**User Story 3:**
+### **User Story 3:**
 
 As a Player I can See a score counter so that track my wins
 
@@ -74,12 +93,10 @@ As a Player I can See a score counter so that track my wins
 * Create JS reads the game over condition write to "wins" or "Losses"  
 * Total score increment
 
-(Include all prioritized should-have features)  
- **Guidance:** Document the secondary features that you aim to implement in Phase 3: Should User Stories Implementation & Any Advanced Features. Include clear acceptance criteria for each.
 
 ### **Could-Have User Stories**
 
-**User Story 1:**
+### **User Story 1:**
 
 As a User I can see current winning streak so that I remain engaged and feel rewarded
 
@@ -92,14 +109,24 @@ As a User I can see current winning streak so that I remain engaged and feel rew
 
 **Tasks:**
 
-*  Increment current streak on win.  
+* Increment current streak on win.  
 * Reset streak on loss, save into maximum if highest.  
 * Save to local storage regularly..
 
-**User Story 2:** 
+### **User Story 2:** 
 
-| As a User I can choose nerd mode so that I can be kept engaged List: [https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il\_fullxfull.4417678458\_9n6c.jpg](https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il_fullxfull.4417678458_9n6c.jpg)Diagram: [https://static.wixstatic.com/media/903056\_39aa9523c70a428684be9744580b0b1b\~mv2.png/v1/fill/w\_568,h\_568,al\_c,q\_85,usm\_0.66\_1.00\_0.01,enc\_auto/903056\_39aa9523c70a428684be9744580b0b1b\~mv2.png](https://static.wixstatic.com/media/903056_39aa9523c70a428684be9744580b0b1b~mv2.png/v1/fill/w_568,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/903056_39aa9523c70a428684be9744580b0b1b~mv2.png) Acceptance criteria: Spock & Lizard can be played. Helper text is visible to indicate effectiveness of Spock & Lizard. Computer needs to be able to play. Tasks: Create new page for gamemode  Add Spock & Lizard buttons. Add JavaScript to handle Spock & Lizard effectiveness. |
-| :---- |
+As a User I can choose nerd mode so that I can be kept engaged 
+List: [https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il\_fullxfull.4417678458\_9n6c.jpg](https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il_fullxfull.4417678458_9n6c.jpg)Diagram: [https://static.wixstatic.com/media/903056\_39aa9523c70a428684be9744580b0b1b\~mv2.png/v1/fill/w\_568,h\_568,al\_c,q\_85,usm\_0.66\_1.00\_0.01,enc\_auto/903056\_39aa9523c70a428684be9744580b0b1b\~mv2.png](https://static.wixstatic.com/media/903056_39aa9523c70a428684be9744580b0b1b~mv2.png/v1/fill/w_568,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/903056_39aa9523c70a428684be9744580b0b1b~mv2.png) 
+
+**Acceptance criteria:**
+* Spock & Lizard can be played
+* Helper text is visible to indicate effectiveness of Spock & Lizard. 
+* Computer needs to be able to play.
+
+**Tasks:** 
+* Create new page for gamemode 
+* Add Spock & Lizard buttons. 
+* Add JavaScript to handle Spock & Lizard effectiveness. 
 
 ## **Design Decisions**
 
