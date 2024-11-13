@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+ /* ------------------------------ Colors ----------------------------------  
+Yellow: #ffd319 | Background grey/blue: #222745 | Dark purple: #452777 | Orange: #ff901f | Bright Purple: #b000ff | Pink: #ff2975
+*/
+/*----------------------------------------------- General styles ---------------------------------------------------*/
 body {
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
   background-color: #222745;
+  color: #ffd319;
+  height: 100vh;
 }
+
+.textGlow{
+  text-shadow: 
+      /* 0 0 2px #ffffff56, */
+      /* 0 0 5px #ffffff9c, */
+      0 0 20px #ffffff8c,
+      0 0 30px #ffd5191f,
+      0 0 41px #ffd5194b,
+      0 0 46px #ffd5191f,
+      0 0 51px #ffd51952,
+      0 0 76px #ffd51975;
+}
+.flicker:hover{
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+.borderGlowTop{
+  border-top: 2px solid #b000ff;
+  box-shadow: 0 0 15px #b000ff;
+}
+.borderGlowBottom{
+  border-bottom: 2px solid #b000ff;
+  box-shadow: 0 0 15px #b000ff;
+}
+/*----------------------------------------------- Navbar ---------------------------------------------------*/
 
 /* Based on nav background colour */
 /* https://maketintsandshades.com/#452777 */
@@ -12,8 +43,8 @@ body {
 .navbar-brand,
 .navbar-brand:hover {
   font-size: 24px;
-  color: #ece9f1;
-  /* color: #ffd319; */
+  /* color: #ece9f1; */
+  color: #ffd319;
 }
 
 .navbar {
@@ -37,4 +68,110 @@ body {
 
 .navbar-nav .nav-link.active {
   color: #150c24;
+}
+
+/* -------------------------------------------- Game container ---------------------------------------------------*/
+
+#gameContainer{
+  height: 90vh;
+}
+
+/* --------------------------------------------- Footer ---------------------------------------------------------*/
+footer {
+  background-color: #452777;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0;
+ 
+}
+footer p{
+  margin-bottom: 0px;
+}
+#teamNames{
+  height: 100%;
+  width: 100%;
+  min-height: 7vh;
+}
+#teamNames li{
+  min-width: 90px;
+  max-width: 225px;
+  display: inline-block;
+}
+
+.devName {
+  display: flex;
+  font-size: 1rem;
+  background-color: #222745;
+  color:#ffd319;
+  text-decoration: none; 
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: 2px solid #b000ff;
+  border-radius: 5px;
+  padding-left: 0.25rem;
+  box-shadow:0 0 15px #b000ff;
+
+}
+.devName i{
+  position: absolute;
+}
+#teamNames li a span{
+  display: inline-block;
+  width: 100%;
+}
+
+#copyright{
+  font-size: 0.6rem;
+}
+#footer-label{
+  font-size: 0.7rem;
+  align-self: center;
+}
+
+/*------------------------------------------------- Media query overrides ------------------------------*/
+@media screen and (min-width: 576px) {
+
+  .container, .container-sm {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 393px){
+
+  #teamNames li{
+    min-width: 150px;
+  }
+}
+
+/*----------------------Animations-----------------------------*/
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:   
+    /* 0 0 5px #ffffffb2, */
+      /* 0 0 5px #ffffff88, */
+      0 0 20px #ffffffb9,
+      0 0 30px #ffd5191f,
+      0 0 41px #ffd5194b,
+      0 0 46px #ffd51934,
+      0 0 51px #ffd51956,
+      0 0 76px #ffd51980;
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+    /* 0 0 4.75px #ffffff88, */
+    /* 0 0 4px #ffffff88, */
+    0 0 18px #ffffffb9,
+    /* 0 0 28px #ffd5191f, */
+    0 0 40px #ffd5194b,
+    0 0 43px #ffd51957,
+    0 0 43px #ffd51973,
+    0 0 66px #ffd51983;
+  }
 }
