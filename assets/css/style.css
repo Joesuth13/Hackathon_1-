@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
- /* ------------------------------ Colors ----------------------------------  
+/* ------------------------------ Colors ----------------------------------  
 Yellow: #ffd319 | Background grey/blue: #222745 | Dark purple: #452777 | Orange: #ff901f | Bright Purple: #b000ff | Pink: #ff2975
 */
 /*----------------------------------------------- General styles ---------------------------------------------------*/
@@ -12,18 +12,15 @@ body {
   height: 100vh;
 }
 
-.textGlow{
+.textGlow {
   text-shadow: 
       /* 0 0 2px #ffffff56, */
-      /* 0 0 5px #ffffff9c, */
-      0 0 20px #ffffff8c,
-      0 0 30px #ffd5191f,
-      0 0 41px #ffd5194b,
-      0 0 46px #ffd5191f,
-      0 0 51px #ffd51952,
-      0 0 76px #ffd51975;
+      /* 0 0 5px #ffffff9c, */ 0 0
+      20px #ffffff8c,
+    0 0 30px #ffd5191f, 0 0 41px #ffd5194b, 0 0 46px #ffd5191f,
+    0 0 51px #ffd51952, 0 0 76px #ffd51975;
 }
-.flicker:hover{
+.flicker:hover {
   animation: pulsate 0.11s ease-in-out infinite alternate;
 }
 .borderGlowTop{
@@ -54,7 +51,7 @@ body {
 .navbar-toggler,
 .navbar-toggler:focus {
   border: none;
-  color: #ece9f1;
+  color: #ffd319;
   font-size: 32px;
 }
 
@@ -63,19 +60,83 @@ body {
 }
 
 .nav-link:hover {
-  color: #a293bb;
+  color: #ffe575;
 }
 
 .navbar-nav .nav-link.active {
-  color: #150c24;
+  color: #ffeda3;
 }
+
+
+
+/* Card styling  */
+
+.game-container {
+  position: absolute;
+  top: 500px; /* Distance from the top of the screen */
+  left: 700px; /* Distance from the left of the screen */
+  display: flex;
+  gap: 50px;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
 
 /* -------------------------------------------- Game container ---------------------------------------------------*/
 
-#gameContainer{
+#gameContainer {
   height: 90vh;
 }
-
+#bestof{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin: 0;
+}
+.bestofcard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+  
+.item {
+  width: 10em;
+}
 /* --------------------------------------------- Footer ---------------------------------------------------------*/
 footer {
   background-color: #452777;
@@ -84,17 +145,16 @@ footer {
   bottom: 0px;
   width: 100%;
   margin-bottom: 0;
- 
 }
-footer p{
+footer p {
   margin-bottom: 0px;
 }
-#teamNames{
+#teamNames {
   height: 100%;
   width: 100%;
   min-height: 7vh;
 }
-#teamNames li{
+#teamNames li {
   min-width: 90px;
   max-width: 225px;
   display: inline-block;
@@ -104,8 +164,8 @@ footer p{
   display: flex;
   font-size: 1rem;
   background-color: #222745;
-  color:#ffd319;
-  text-decoration: none; 
+  color: #ffd319;
+  text-decoration: none;
   text-align: center;
   justify-content: space-between;
   width: 100%;
@@ -117,33 +177,32 @@ footer p{
   box-shadow:0 0 15px #8c00ff;
 
 }
-.devName i{
+.devName i {
   position: absolute;
 }
-#teamNames li a span{
+#teamNames li a span {
   display: inline-block;
   width: 100%;
 }
 
-#copyright{
+#copyright {
   font-size: 0.6rem;
 }
-#footer-label{
+#footer-label {
   font-size: 0.7rem;
   align-self: center;
 }
 
 /*------------------------------------------------- Media query overrides ------------------------------*/
 @media screen and (min-width: 576px) {
-
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 100%;
   }
 }
 
-@media screen and (max-width: 393px){
-
-  #teamNames li{
+@media screen and (max-width: 393px) {
+  #teamNames li {
     min-width: 150px;
   }
 }
@@ -154,24 +213,18 @@ footer p{
     /* Larger blur radius */
     text-shadow:   
     /* 0 0 5px #ffffffb2, */
-      /* 0 0 5px #ffffff88, */
-      0 0 20px #ffffffb9,
-      0 0 30px #ffd5191f,
-      0 0 41px #ffd5194b,
-      0 0 46px #ffd51934,
-      0 0 51px #ffd51956,
-      0 0 76px #ffd51980;
+      /* 0 0 5px #ffffff88, */ 0
+        0 20px #ffffffb9,
+      0 0 30px #ffd5191f, 0 0 41px #ffd5194b, 0 0 46px #ffd51934,
+      0 0 51px #ffd51956, 0 0 76px #ffd51980;
   }
- 0% {
+  0% {
     /* A slightly smaller blur radius */
     text-shadow:
     /* 0 0 4.75px #ffffff88, */
-    /* 0 0 4px #ffffff88, */
-    0 0 18px #ffffffb9,
-    /* 0 0 28px #ffd5191f, */
-    0 0 40px #ffd5194b,
-    0 0 43px #ffd51957,
-    0 0 43px #ffd51973,
-    0 0 66px #ffd51983;
+    /* 0 0 4px #ffffff88, */ 0 0
+        18px #ffffffb9,
+      /* 0 0 28px #ffd5191f, */ 0 0 40px #ffd5194b, 0 0 43px #ffd51957,
+      0 0 43px #ffd51973, 0 0 66px #ffd51983;
   }
 }
