@@ -36,14 +36,14 @@ const winnerArray = [
     if (currentStreakScoreLocal) {
       currentStreakScore = parseInt(currentStreakScoreLocal);
     }
-    currentStreakScoreParagraph.innerText = `Current Streak: ${currentStreakScore}`;
+    currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
   
     // Get highest streak score from local storage.
     const highestStreakScoreLocal = localStorage.getItem('highest-streak-score');
     if (highestStreakScoreLocal) {
       highestStreakScore = parseInt(highestStreakScoreLocal);
     }
-    highestStreakScoreParagraph.innerText = `Highest Streak: ${highestStreakScore}`;
+    highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${highestStreakScore}</strong><br>Highest Streak`;
   
   
     function userChoice(choice) {
@@ -63,12 +63,12 @@ const winnerArray = [
           sessionStorage.setItem('lastOutcome', outcomeText);
           currentStreakScore++;
           localStorage.setItem('current-streak-score', currentStreakScore);
-          currentStreakScoreParagraph.innerText = `Current Streak: ${currentStreakScore}`;
+          currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
   
           if (currentStreakScore > highestStreakScore) {
             highestStreakScore = currentStreakScore;
             localStorage.setItem('highest-streak-score', highestStreakScore);
-            highestStreakScoreParagraph.innerText = `Highest Streak: ${highestStreakScore}`;
+           highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${highestStreakScore}</strong><br>Highest Streak`;
           }
   
           break;

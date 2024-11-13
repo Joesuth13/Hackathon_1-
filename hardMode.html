@@ -42,14 +42,16 @@
 
   <main id="mainContainer">
 
-
-    <p id="game-outcome" class="textGlow info-text">Outcome text here </p>
+ <div id="game-state">
+    <p id="user-choice" class="info-text textGlow">Pick one!</p>
+    <p id="computer-choice" class="info-text textGlow">Waiting...</p>
+  </div>
+    <p id="game-outcome" class="textGlow info-text">Rock, Paper, Scissors </p>
     <div id="scores">
-      <p id="current-streak-score" class="info-text textGlow">Streak score here</p>
-      <p id="highest-streak-score" class="info-text textGlow">high score here</p>
+      <p id="current-streak-score" class="info-text textGlow">0 <br> Streak score here</p>
+      <p id="highest-streak-score" class="info-text textGlow">0 <br> high score here</p>
     </div>
-    <p id="user-choice" class="info-text textGlow">user choice here</p>
-    <p id="computer-choice" class="info-text textGlow">cpu choice here</p>
+   
 
 
     <div id="gameContainer">
@@ -70,7 +72,7 @@
 
 
 
-  <div class="container g-0">
+  <div id="footer" class="container g-0">
     <footer class="borderGlowTop d-flex flex-wrap justify-content-center align-items-center py-1 flex-column">
 
 
