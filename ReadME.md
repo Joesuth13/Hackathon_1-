@@ -134,14 +134,21 @@ List: [https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il\_fullxfull.44
 
 Desktop:  
 
+<img src="assets/img/desktop.png" width="300" />
 
 Tablet:
 
+<img src="assets/img/tablet.png" width="300" />
  
 Mobile Phone:  
- 
+
+ <img src="assets/img/phone.png" width="300" />
+
 Colour palette:   
-Our colour palette aimed to remind users of the retro gaming aesthetic. The bright colours will keep the users engaged, and they are all cohesive so that it is pleasing to the ey  
+
+<img src="assets/img/colourpalette.png" width="300" />
+
+Our colour palette aimed to remind users of the retro gaming aesthetic. The bright colours will keep the users engaged, and they are all cohesive so that it is pleasing to the eye
 
 
 Include wireframes for key sections of your website.  
