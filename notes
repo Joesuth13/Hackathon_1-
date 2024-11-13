@@ -1,0 +1,12 @@
+possible iteration for game 
+
+if (userChoice === computerChoice) {
+    console.log("It's a tie!");
+  } else if (
+    (userChoice === "rock" && computerChoice === "scissors") ||
+    (userChoice === "paper" && computerChoice === "rock") ||
+    (userChoice === "scissors" && computerChoice === "paper")
+  ) {
+    console.log("You win!");
+  } else {
+    console.log("Computer wins!")
