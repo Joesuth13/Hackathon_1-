@@ -87,9 +87,11 @@ body {
   color: #ffeda3;
 }
 
+.hardMode{
+  color: red
+}
 
-
-/* Card styling  */
+/*----------------------------------------------------- Card styling ----------------------------------------------------------------------------------- */
 #gameContainer{
   display: flex;
   flex-direction: row;
@@ -159,7 +161,24 @@ body {
 .item {
   width: 10rem;
 }
-/* --------------------------------------------- Footer ---------------------------------------------------------*/
+#mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.info-text{
+  position: absolute;
+}
+#game-outcome{
+ align-self: center;
+ 
+}
+#scores{
+  align-self: flex-end;
+}
+
+/*-------------------------------------- Footer ---------------------------------------------------------*/
 footer {
   background-color: #452777;
   /* margin-top: auto; */
