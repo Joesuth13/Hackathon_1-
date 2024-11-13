@@ -5,15 +5,22 @@ body {
   background-color: #222745;
 }
 
-.navigation-text, .navigation-text li a {
+/* Based on nav background colour */
+/* https://maketintsandshades.com/#452777 */
+
+.nav-link,
+.navbar-brand,
+.navbar-brand:hover {
   font-size: 24px;
-  color: #f8f9fa !important;
+  color: #ece9f1;
+  /* color: #ffd319; */
 }
 
-#nav {
+.navbar {
   background-color: #452777;
 }
 
+<<<<<<< HEAD
 /* card styling  */
 * {
   margin: 0;
@@ -59,4 +66,23 @@ body {
   font-size: 1.2em;
   font-weight: bold;
   color: #333;
+=======
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  color: #ece9f1;
+  font-size: 32px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link:hover {
+  color: #a293bb;
+}
+
+.navbar-nav .nav-link.active {
+  color: #150c24;
+>>>>>>> origin/main
 }
