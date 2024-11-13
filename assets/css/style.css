@@ -27,6 +27,10 @@ body {
 .flicker:hover {
   animation: pulsate 0.11s ease-in-out infinite alternate;
 }
+.cardFlicker:hover {
+  animation: border-pulsate 0.11s ease-in-out infinite alternate;
+  
+}
 .borderGlowTop{
   border-top: 2px solid #7f0fff;
   box-shadow: 0 0 15px #7f0fff;
@@ -196,6 +200,7 @@ body {
   align-items: center;
   padding: 2vw;
   font-size: 0.9rem;
+  transform: translateY(70%);
 
 }
 #game-state{
@@ -293,7 +298,7 @@ footer p {
   }
   
   #gameContainer {
-    height: calc(100vh - 170px) ;
+    height: calc(100vh - 70px) ;
     padding-bottom: 2vh;
   }
   #footer{
@@ -351,5 +356,25 @@ footer p {
         18px #ffffffb9,
       /* 0 0 28px #ffd5191f, */ 0 0 40px #ffd5194b, 0 0 43px #ffd51957,
       0 0 43px #ffd51973, 0 0 66px #ffd51983;
+  }
+}
+@keyframes border-pulsate {
+  100% {
+    /* Larger blur radius */
+    box-shadow:   
+    /* 0 0 5px #ffffffb2, */
+      /* 0 0 5px #ffffff88, */ 0
+        0 20px #ffffffb9,
+      0 0 30px #7f0fff18, 0 0 41px #7f0fff41, 0 0 46px #7f0fff59,
+      0 0 51px #7f0fff8c, 0 0 76px #7f0fffbe;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    box-shadow:
+    /* 0 0 4.75px #ffffff88, */
+    /* 0 0 4px #ffffff88, */ 0 0
+        18px #ffffffb9,
+      /* 0 0 28px #ffd5191f, */ 0 0 40px #7f0fff41, 0 0 43px #7f0fff59,
+      0 0 43px  #7f0fff8c, 0 0 66px #7f0fffbe;
   }
 }

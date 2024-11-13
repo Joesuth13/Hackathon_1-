@@ -32,7 +32,7 @@ const winnerArray = [
     );
   
     // Get current streak score from local storage.
-    const currentStreakScoreLocal = localStorage.getItem('current-streak-score');
+    const currentStreakScoreLocal =  sessionStorage.getItem('current-streak-score');
     if (currentStreakScoreLocal) {
       currentStreakScore = parseInt(currentStreakScoreLocal);
     }
@@ -62,7 +62,7 @@ const winnerArray = [
           outcomeText = 'You won!';
           sessionStorage.setItem('lastOutcome', outcomeText);
           currentStreakScore++;
-          localStorage.setItem('current-streak-score', currentStreakScore);
+          sessionStorage.setItem('current-streak-score', currentStreakScore);
           currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
   
           if (currentStreakScore > highestStreakScore) {
@@ -83,8 +83,8 @@ const winnerArray = [
           sessionStorage.setItem('lastOutcome', outcomeText);
 
           currentStreakScore = 0;
-          localStorage.setItem('current-streak-score', '0');
-          currentStreakScoreParagraph.innerText = `Current Streak: ${currentStreakScore}`;
+          sessionStorage.setItem('current-streak-score', '0');
+          currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
           
           break;
   
@@ -114,7 +114,7 @@ let roundsPlayed = 0
 
 let outcomeText = gameOutcomeParagraph.innerText
 /** Function to discover last outcome from html */
-let lastOutcometext = localStorage.getItem('lastOutcome');
+let lastOutcometext = sessionStorage.getItem('lastOutcome');
 let lastOutcome = findLastOutcome(lastOutcometext)
 
 function findLastOutcome(outcomeText) {
