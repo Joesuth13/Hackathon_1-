@@ -38,3 +38,42 @@ body {
 .navbar-nav .nav-link.active {
   color: #150c24;
 }
+
+
+/* Card styling  */
+
+.game-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
