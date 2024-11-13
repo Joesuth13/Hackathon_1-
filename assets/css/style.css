@@ -16,17 +16,23 @@ body {
   text-shadow: 
       /* 0 0 2px #ffffff56, */
       /* 0 0 5px #ffffff9c, */
-      /* 0 0 20px #ffffffb9, */
-      /* 0 0 30px #ffd5191f, */
-      /* 0 0 41px #ffd5194b, */
-      /* 0 0 46px #ffd5191f, */
-      /* 0 0 51px #ffd51952, */
-      0 0 76px #ffd5193f;
-
-  
+      0 0 20px #ffffff8c,
+      0 0 30px #ffd5191f,
+      0 0 41px #ffd5194b,
+      0 0 46px #ffd5191f,
+      0 0 51px #ffd51952,
+      0 0 76px #ffd51975;
 }
 .flicker:hover{
   animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+.borderGlowTop{
+  border-top: 2px solid #b000ff;
+  box-shadow: 0 0 15px #b000ff;
+}
+.borderGlowBottom{
+  border-bottom: 2px solid #b000ff;
+  box-shadow: 0 0 15px #b000ff;
 }
 /*----------------------------------------------- Navbar ---------------------------------------------------*/
 
@@ -37,8 +43,8 @@ body {
 .navbar-brand,
 .navbar-brand:hover {
   font-size: 24px;
-  color: #ece9f1;
-  /* color: #ffd319; */
+  /* color: #ece9f1; */
+  color: #ffd319;
 }
 
 .navbar {
@@ -76,10 +82,9 @@ footer {
   position: relative;
   left: 0px;
   bottom: 0px;
-  
   width: 100%;
   margin-bottom: 0;
-
+ 
 }
 footer p{
   margin-bottom: 0px;
@@ -97,7 +102,7 @@ footer p{
 
 .devName {
   display: flex;
-  
+  font-size: 1rem;
   background-color: #222745;
   color:#ffd319;
   text-decoration: none; 
@@ -116,11 +121,9 @@ footer p{
   position: absolute;
 }
 #teamNames li a span{
-
   display: inline-block;
   width: 100%;
 }
-
 
 #copyright{
   font-size: 0.6rem;
@@ -132,20 +135,17 @@ footer p{
 
 /*------------------------------------------------- Media query overrides ------------------------------*/
 @media screen and (min-width: 576px) {
+
   .container, .container-sm {
     max-width: 100%;
   }
-  
 }
 
 @media screen and (max-width: 393px){
 
-#teamNames li{
-  min-width: 150px;
-  
-  
-}
-
+  #teamNames li{
+    min-width: 150px;
+  }
 }
 
 /*----------------------Animations-----------------------------*/
@@ -155,7 +155,7 @@ footer p{
     text-shadow:   
     /* 0 0 5px #ffffffb2, */
       /* 0 0 5px #ffffff88, */
-      /* 0 0 20px #ffffffb9, */
+      0 0 20px #ffffffb9,
       0 0 30px #ffd5191f,
       0 0 41px #ffd5194b,
       0 0 46px #ffd51934,
@@ -167,7 +167,7 @@ footer p{
     text-shadow:
     /* 0 0 4.75px #ffffff88, */
     /* 0 0 4px #ffffff88, */
-    /* 0 0 18px #ffffffb9, */
+    0 0 18px #ffffffb9,
     /* 0 0 28px #ffd5191f, */
     0 0 40px #ffd5194b,
     0 0 43px #ffd51957,
