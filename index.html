@@ -15,7 +15,9 @@
   <body>
     <nav class="navbar navbar-expand-lg borderGlowBottom">
       <div class="container-fluid">
-        <a class="textGlow flicker navbar-brand" href="#">Rock Paper Scissors</a>
+        <a class="textGlow flicker navbar-brand" href="#"
+          >Rock Paper Scissors</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -25,15 +27,13 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div
           class="collapse navbar-collapse flex-grow-0"
           id="navbarSupportedContent"
         >
-          <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 text-center gap-3"
-          >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center gap-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >Free Play</a
@@ -53,40 +53,61 @@
       </div>
     </nav>
 
+    <main id="gameContainer"></main>
 
-    <main id="gameContainer">
-
-
-
-
-    </main>
-  
-  
-  
-  <div class="container g-0">
-    <footer class="borderGlowTop d-flex flex-wrap justify-content-center align-items-center py-1 flex-column">
-     
-        
-          
+    <div class="container g-0">
+      <footer
+        class="borderGlowTop d-flex flex-wrap justify-content-center align-items-center py-1 flex-column"
+      >
         <p id="footer-label">Meet the team:</p>
 
-        <ul id="teamNames" class="nav list-unstyled justify-content-center flex-wrap flex-row">
-          
-          <li class="col-3 col-sm-3 p-1 "><a class="devName" href="https://github.com/Joesuth13"><i class="fa-brands fa-github"></i> <span class="textGlow">Joe</span></a></li>
-          <li class="col-3 col-sm-3 p-1"><a class="devName" href="https://github.com/Russlyman?tab=repositories"><i class="fa-brands fa-github"></i><span class="textGlow">Ross</span></a></li>
-          <li class="col-3 col-sm-3 p-1"><a class="devName" href="https://github.com/sahebachabra"><i class="fa-brands fa-github"></i><span class="textGlow">  Saheba</span></a></li>
-          <li class="col-3 col-sm-3 p-1"><a class="devName" href="https://github.com/rabsingh?tab=repositories"><i class="fa-brands fa-github"></i><span class="textGlow">Rab</span></a></li>
-
+        <ul
+          id="teamNames"
+          class="nav list-unstyled justify-content-center flex-wrap flex-row"
+        >
+          <li class="col-3 col-sm-3 p-1">
+            <a
+              class="devName"
+              href="https://github.com/Joesuth13"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i>
+              <span class="textGlow">Joe</span></a
+            >
+          </li>
+          <li class="col-3 col-sm-3 p-1">
+            <a
+              class="devName"
+              href="https://github.com/Russlyman?tab=repositories"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+              ><span class="textGlow">Ross</span></a
+            >
+          </li>
+          <li class="col-3 col-sm-3 p-1">
+            <a
+              class="devName"
+              href="https://github.com/sahebachabra"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+              ><span class="textGlow"> Saheba</span></a
+            >
+          </li>
+          <li class="col-3 col-sm-3 p-1">
+            <a
+              class="devName"
+              href="https://github.com/rabsingh?tab=repositories"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+              ><span class="textGlow">Rab</span></a
+            >
+          </li>
         </ul>
-     
 
-      <div class="row g-0 justify-content-center mt-1">
-      <span id="copyright" class=" mb-md-0">© 2024 Retrowave Team</span>
-      </div>
-
-    </footer>
-  </div>
-
+        <div class="row g-0 justify-content-center mt-1">
+          <span id="copyright" class="mb-md-0">© 2024 Retrowave Team</span>
+        </div>
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
