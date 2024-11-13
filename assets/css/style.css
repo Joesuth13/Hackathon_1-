@@ -9,7 +9,10 @@ body {
   font-weight: 600;
   background-color: #222745;
   color: #ffd319;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .textGlow {
@@ -23,13 +26,30 @@ body {
 .flicker:hover {
   animation: pulsate 0.11s ease-in-out infinite alternate;
 }
-.borderGlowTop {
-  border-top: 2px solid #b000ff;
-  box-shadow: 0 0 15px #b000ff;
+.borderGlowTop{
+  border-top: 2px solid #7f0fff;
+  box-shadow: 0 0 15px #7f0fff;
 }
-.borderGlowBottom {
-  border-bottom: 2px solid #b000ff;
-  box-shadow: 0 0 15px #b000ff;
+.borderGlowBottom{
+  border-bottom: 2px solid #7f0fff;
+  box-shadow: 0 0 15px #7f0fff;
+}
+.borderGlowSurround{
+  border: 2px solid #7f0fff;
+  box-shadow: 0 0 15px #7f0fff;
+}
+.bgColorOrange{
+  background-color: #ff901f;
+}
+.bgColorPink{
+  background-color: #ff2975;
+}
+.bgColorGreyBlu{
+  background-color: hsl(174, 25%, 71%);
+}
+.bgColorPurple{
+  background-color: #8700c5;
+  color: #f0c400;
 }
 /*----------------------------------------------- Navbar ---------------------------------------------------*/
 
@@ -70,28 +90,29 @@ body {
 
 
 /* Card styling  */
-
-.game-container {
-  position: absolute;
-  top: 500px; /* Distance from the top of the screen */
-  left: 700px; /* Distance from the left of the screen */
+#gameContainer{
   display: flex;
-  gap: 50px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .card {
-  width: 150px;
-  height: 200px;
-  background-color: #ffffff;
-  border: 2px solid #ccc;
+  aspect-ratio: 2/2;
+  width: 11.5vw;
+  min-width: 110px;
+  
+ 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+  margin-left: 2vw;
+  margin-bottom: 0px;
 }
 
 .card:hover {
@@ -99,22 +120,23 @@ body {
 }
 
 .card img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 10px;
 }
 
 .card p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+ 
 }
 
 
 /* -------------------------------------------- Game container ---------------------------------------------------*/
 
 #gameContainer {
-  height: 90vh;
+  height: calc(100vh - 200px) ;
+
 }
 #bestof{
   display: flex;
@@ -135,12 +157,13 @@ body {
 }
   
 .item {
-  width: 10em;
+  width: 10rem;
 }
 /* --------------------------------------------- Footer ---------------------------------------------------------*/
 footer {
   background-color: #452777;
-  position: relative;
+  /* margin-top: auto; */
+  position: absolute;
   left: 0px;
   bottom: 0px;
   width: 100%;
@@ -162,7 +185,7 @@ footer p {
 
 .devName {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.25rem;
   background-color: #222745;
   color: #ffd319;
   text-decoration: none;
@@ -171,10 +194,11 @@ footer p {
   width: 100%;
   height: 100%;
   align-items: center;
-  border: 2px solid #b000ff;
+  border: 2px solid #8c00ff;
   border-radius: 5px;
   padding-left: 0.25rem;
-  box-shadow: 0 0 15px #b000ff;
+  box-shadow:0 0 15px #8c00ff;
+
 }
 .devName i {
   position: absolute;
@@ -198,13 +222,38 @@ footer p {
   .container-sm {
     max-width: 100%;
   }
+  
+  #gameContainer {
+    height: calc(100vh - 170px) ;
+    padding-bottom: 2vh;
+  }
+
+
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 564px) {
   #teamNames li {
     min-width: 150px;
+    position: relative;
+  }
+  #teamNames {
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+ .card{
+    margin-bottom: 3vh ;
   }
 }
+@media screen and (max-width: 448px){
+ footer {
+  position: relative;
+ }
+ #gameContainer {
+  height: calc(100vh - 200px) ;
+
+}
+}
+
 
 /*----------------------Animations-----------------------------*/
 @keyframes pulsate {
