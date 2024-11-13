@@ -136,6 +136,8 @@ Desktop:
 
 <img src="assets/img/desktop.png" width="300" />
 
+The player has the choice of picking from the bottom three cards, and their win/lose result will be revealed once the top card flips to show the computer's choice
+
 Tablet:
 
 <img src="assets/img/tablet.png" width="300" />
@@ -144,23 +146,22 @@ Mobile Phone:
 
  <img src="assets/img/phone.png" width="300" />
 
+ To adjust our game to a mobile phone, we made sure the player's choices (rock, paper of scissors) were near the middle of the screen near the thumbs for easy accessibility. 
+
 Colour palette:   
 
 <img src="assets/img/colourpalette.png" width="300" />
 
-Our colour palette aimed to remind users of the retro gaming aesthetic. The bright colours will keep the users engaged, and they are all cohesive so that it is pleasing to the eye
+Our colour palette aimed to remind users of the retro gaming aesthetic. The bright colours will keep the users engaged, and they are all cohesive so that it is pleasing to the eye.
 
-
-Include wireframes for key sections of your website.  
-Briefly describe the design choices, including layout, color schemes, and fonts.
-
-**Guidance:** Start this section during Phase 1: Ideation & Initial Setup and update it throughout Phase 2 and Phase 3\. Include digital wireframes created in Phase 1\. Document the reasoning behind your layout choices, colour schemes, and font selections.
 
 **Font Family:**
 
 [https://fonts.google.com/specimen/Jersey+10?query=jersey](https://fonts.google.com/specimen/Jersey+10?query=jersey)
 
 [https://fonts.google.com/specimen/Orbitron?preview.text=Rock%20paper%20scissors\&categoryFilters=Appearance:%2FTheme%2FTechno](https://fonts.google.com/specimen/Orbitron?preview.text=Rock%20paper%20scissors&categoryFilters=Appearance:%2FTheme%2FTechno)
+
+The font we decided to use aligns with our retro theme, reminding players of old school gaming.
 
 ### **Accessibility Considerations**
 

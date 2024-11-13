@@ -119,7 +119,27 @@ body {
 #gameContainer{
   height: 90vh;
 }
-
+#bestof{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin: 0;
+}
+.bestofcard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+  
+.item {
+  width: 10em;
+}
 /* --------------------------------------------- Footer ---------------------------------------------------------*/
 footer {
   background-color: #452777;
