@@ -43,8 +43,11 @@ body {
 /* Card styling  */
 
 .game-container {
+  position: absolute;
+  top: 500px; /* Distance from the top of the screen */
+  left: 700px; /* Distance from the left of the screen */
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .card {
