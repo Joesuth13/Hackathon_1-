@@ -165,8 +165,7 @@ The font we decided to use aligns with our retro theme, reminding players of old
 
 ### **Accessibility Considerations**
 
-Discuss how accessibility guidelines were adhered to, including colour contrast and alt text for images.  
- **Guidance:** Outline how you've incorporated accessibility into your design, ensuring that your project adheres to guidelines such as WCAG.
+some care was taken in the design stage of the project to ensure that all essential text and gameplay elements have sufficient contrast against any background colours.
 
 ## **AI Tools Usage**
 
@@ -178,16 +177,15 @@ Describe how DALL-E was used for image generation, including examples of success
 ## **Features Implementation**
 
 ### **Core Features (Must-Haves)**
-
-* **Feature 1:** Description of the implemented feature.  
-* **Feature 2:** Description of the implemented feature.
-
-(Include all must-have features)  
- **Guidance:** Use this section as you complete Phase 2: Must User Stories Implementation & Testing. Document all the must-have features you implemented, explaining how they align with the user stories and acceptance criteria.
+* **Basic page layout:** The game needs a slate to sit on, this needs to be intuitive to navigate and pleasing to the eye. it also needs to adhere to accessibility guidlines and use semantic html.
+* **Footer containing our github profiles** As this project is primarily a portfolio item, a footer containing buttons to link to each of our gitHub profiles is essential.
+* **User selects rock, paper or scissors:** The basic rock paper scissors game is our MVP, first we needed to give the user the ability to select a play option, and for our Javascript to get the user choice in numerical form.
+* **Random computer play choice:** The next stage in our MVP's gameplay is for the computer opponent to make a selection, for this we used a random number generator. the value of this is then passed to a checkWin() function along with the user choice number
+* **Game state feedback:** Once the script has compared the user choice and computer choice, it returns a game state (win/loss/tie). this needs to be fed back to the user as on-screen text.
 
 ### **Advanced Features (Should-Haves)**
 
-* **Feature 1:** Description of the implemented feature.  
+* **score counters** Description of the implemented feature.  
 * **Feature 2:** Description of the implemented feature.
 
 (Include all should-have features)  
@@ -212,15 +210,17 @@ Describe how GitHub Copilot assisted in coding, including any challenges or adju
 
 ### **Testing Results**
 
-Summarize the results of testing across different devices and screen sizes.  
- Mention any issues found and how they were resolved.  
- **Guidance:** Summarize the results of your testing across various devices using tools like Chrome DevTools, as outlined in Phase 2\. Mention any issues found and how they were resolved.
+To test our site for accessibility and performance, we used a web version of the lighthouse service found at https://www.webpagetest.org/result/241114_BiDcYM_6F4/#PWA.
+we are please with the result
+
+<img src="assets/img/lighthouse-report.png" alt="Lighthouse report showing performance score of 94, accessibility score of 100, best practice score of 100, SEO score of 92 and PWA score of 38">
 
 ### **Validation**
 
-Discuss the validation process for HTML and CSS using W3C and Jigsaw validators.  
- Include the results of the validation process.  
- **Guidance:** Document your use of W3C and Jigsaw validators to ensure your HTML and CSS meet web standards. Include any errors or warnings encountered and how they were resolved.
+We checked each html document individually using w3c markup validator, we found some minro errors involving snippets of deleted code being left behind, these were easy to address and all html pages now pass validation. Our CSS also passes validation using the same tool, though we recognise the need to pay more attention to the structure the style sheet to better organise the information.
+
+We checked our Javascript documents with JShint and found no issues, though, given more time we would work as a team to improve the hardMode.js layout and structure to make it easier to read and understand.
+
 
 ## **AI Tools Usage**
 

@@ -96,7 +96,7 @@ body {
 }
 
 .hardMode{
-  color: red
+  color: rgb(255, 128, 0)
 }
 
 /*----------------------------------------------------- Card styling ----------------------------------------------------------------------------------- */
@@ -111,10 +111,7 @@ body {
   aspect-ratio: 2/2;
   width: 11.5vw;
   min-width: 110px;
-  
- 
   border-radius: 10px;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +181,6 @@ body {
 #game-outcome{
  align-self: center;
  position: absolute;
-
  transform: translateY(50%);
  font-size: 1.5rem;
  font-weight: 700;
@@ -337,7 +333,7 @@ footer p {
 }
 
 
-/*----------------------Animations-----------------------------*/
+/*------------------------------------------------------------------- Animations --------------------------------------------------------------------------------------------*/
 @keyframes pulsate {
   100% {
     /* Larger blur radius */

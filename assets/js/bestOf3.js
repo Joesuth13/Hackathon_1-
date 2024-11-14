@@ -9,11 +9,11 @@ const winnerArray = [
   // Scores
   let currentStreakScore = 0;
   let highestStreakScore = 0;
-  let userScore = 0
-  let cpuScore = 0
-  let currentWins = 0
-  let currentLosses = 0
-  let gameNumber = 1
+  let userScore = 0;
+  let cpuScore = 0;
+  let currentWins = 0;
+  let currentLosses = 0;
+  let gameNumber = 1;
   document.addEventListener('DOMContentLoaded', function () {
     // Add choice handler function to Rock, Paper and Scissors buttons.
     const userSelectionButtonList = document.querySelectorAll('.user-selection');
@@ -53,13 +53,13 @@ const winnerArray = [
     function checkWin(player1, player2) {
       const outcome = winnerArray[player1][player2];
       
-      let outcomeText = `Game ${gameNumber}/3`
+      let outcomeText = `Game ${gameNumber}/3`;
         
       switch (outcome) {
         case 1:
-            gameNumber++
-            ++currentWins
-            console.log(currentWins)
+            gameNumber++;
+            ++currentWins;
+            console.log(currentWins);
             currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentWins}</strong><br>Your score`;
             if (currentWins >= 2){
             
@@ -67,7 +67,7 @@ const winnerArray = [
             currentWins = 0;
             currentLosses = 0;
             currentStreakScore++;
-            gameNumber = 0
+            gameNumber = 0;
             currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentWins}</strong><br>Your score`;
             highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentLosses}</strong><br>CPU Score`;
              }
@@ -83,15 +83,15 @@ const winnerArray = [
           break;
   
         case -1:
-            gameNumber++
-          ++currentLosses
+            gameNumber++;
+          ++currentLosses;
           highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentLosses}</strong><br>CPU Score`;
           if(currentLosses >=2){
             outcomeText = 'You lost!';
             currentStreakScore = 0;
             currentWins = 0;
             currentLosses = 0;
-            gameNumber = 0
+            gameNumber = 0;
             currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentWins}</strong><br>Your score`;
             highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentLosses}</strong><br>CPU Score`;
           }
