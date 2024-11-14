@@ -108,7 +108,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  
 }
 
 .card {
@@ -122,8 +121,8 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: transform 0.3s ease;
-  /* margin-left: 2vw; */
-  margin-bottom: 10px;
+  margin-left: 2vw;
+  margin-bottom: 0px;
 }
 
 .card:hover {
@@ -146,13 +145,13 @@ body {
   background-color: #452777;
   transform: none !important;
   cursor: auto;
-  width: 20vw;
+  width: 23vw;
   min-width: 180px;
-  max-width: 300px;
-  margin-top: 10px;
 }
 
 /* -------------------------------------------- Game container ---------------------------------------------------*/
+
+
 
 
 #bestof{
@@ -180,25 +179,25 @@ body {
   margin-left: 0px;
 }
 #mainContainer{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: inherit; */
+  min-height: inherit;
 }
 .info-text{
-  /* display: inline-block; */
+  display: inline-block;
 }
 #game-outcome{
  align-self: center;
- /* position: absolute; */
- /* transform: translateY(50%); */
- font-size: 2.0rem;
+ position: absolute;
+ transform: translateY(50%);
+ font-size: 1.5rem;
  font-weight: 700;
- /* text-align: center; */
- /* transform: translateY(-150%)  */
+ text-align: center;
+ transform: translateY(-150%)
 }
 #scores{
-  /* width: 100%;
+  width: 100%;
   height: 60px;
   position: absolute;
   display: flex;
@@ -206,7 +205,7 @@ body {
   align-items: center;
   padding: 2vw;
   font-size: 0.9rem;
-  transform: translateY(70%); */
+  transform: translateY(70%);
 
 }
 #game-state{
@@ -219,20 +218,20 @@ body {
   flex-direction: column-reverse;
   text-align: center;
   align-self: center;
-  font-size: 0.8rem;
-  transform: translateY(-30%); */
+  font-size: 0.8rem; */
+  /* transform: translateY(-30%); */
 }
 #current-streak-score{
-  /* left: 3vw;
+  left: 3vw;
   bottom: 44vh;
   position: initial;
-  text-align: center; */
+  text-align: center;
 }
 #highest-streak-score{
-  /* left: 3vw;
+  left: 3vw;
   bottom: 40vh;
   position: initial;
-  text-align: center; */
+  text-align: center;
 }
 
 /*-------------------------------------- Footer ---------------------------------------------------------*/
@@ -302,10 +301,11 @@ footer p {
   .container-sm {
     max-width: 100%;
   }
-  body{
-    overflow-x: hidden;
+  
+  #gameContainer {
+    height: calc(100vh - 70px) ;
+    padding-bottom: 2vh;
   }
-
   #footer{
     position: inherit;
     bottom:-25%
@@ -335,7 +335,10 @@ footer p {
  footer {
   position: relative;
  }
- 
+ #gameContainer {
+  height: calc(100vh - 100px) ;
+
+}
 }
 
 
