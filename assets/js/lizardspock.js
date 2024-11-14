@@ -15,11 +15,11 @@ let highestStreakScore = 0;
 
 function getOutcomeMessage(player, computer) {
   const outcomeMessages = [
-    ["It's a draw!", "Paper covers Rock", "Rock crushes Scissors", "Rock crushes Lizard", "Spock vaporizes Rock"],
-    ["Paper covers Rock", "It's a draw!", "Scissors cuts Paper", "Lizard eats Paper", "Paper disproves Spock"],
-    ["Rock crushes Scissors", "Scissors cuts Paper", "It's a draw!", "Scissors decapitates Lizard", "Spock smashes Scissors"],
-    ["Rock crushes Lizard", "Lizard eats Paper", "Scissors decapitates Lizard", "It's a draw!", "Lizard poisons Spock"],
-    ["Spock vaporizes Rock", "Paper disproves Spock", "Spock smashes Scissors", "Lizard poisons Spock", "It's a draw!"]
+    ["You drew!", "Paper covers Rock", "Rock crushes Scissors", "Rock crushes Lizard", "Spock vaporizes Rock"],
+    ["Paper covers Rock", "You drew!", "Scissors cuts Paper", "Lizard eats Paper", "Paper disproves Spock"],
+    ["Rock crushes Scissors", "Scissors cuts Paper", "You drew!", "Scissors decapitates Lizard", "Spock smashes Scissors"],
+    ["Rock crushes Lizard", "Lizard eats Paper", "Scissors decapitates Lizard", "You drew!", "Lizard poisons Spock"],
+    ["Spock vaporizes Rock", "Paper disproves Spock", "Spock smashes Scissors", "Lizard poisons Spock", "You drew!"]
   ];
   return outcomeMessages[player][computer];
 }
@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       function checkWin(player1, player2) {
         const outcome = winnerArray[player1][player2];
-        let outcomeText = getOutcomeMessage(player1, player 2);
+        let outcomeText = getOutcomeMessage(player1, player2);
 
         if (outcome === 1) {
-          outcomeText += ' You won!';
+          outcomeText = 'You won! ' + outcomeText;
           currentStreakScore++;
           localStorage.setItem('current-streak-score', currentStreakScore);
           currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
@@ -85,10 +85,9 @@ document.addEventListener('DOMContentLoaded', function () {
             highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${highestStreakScore}</strong><br>Highest Streak`;
           }
 
-        } else if (outcome === 0) {
-          outcomeText += ' You drew!';
-        } else if (outcome === -1) {
-          outcomeText += ' You lost!';
+        } 
+         else if (outcome === -1) {
+          outcomeText = 'You lost. ' + outcomeText;
           currentStreakScore = 0;
           localStorage.setItem('current-streak-score', '0');
           currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
