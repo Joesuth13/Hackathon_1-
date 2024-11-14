@@ -4,6 +4,7 @@
 Yellow: #ffd319 | Background grey/blue: #222745 | Dark purple: #452777 | Orange: #ff901f | Bright Purple: #b000ff | Pink: #ff2975
 */
 /*----------------------------------------------- General styles ---------------------------------------------------*/
+
 body {
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
@@ -25,6 +26,10 @@ body {
 }
 .flicker:hover {
   animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+.cardFlicker:hover {
+  animation: border-pulsate 0.11s ease-in-out infinite alternate;
+  
 }
 .borderGlowTop{
   border-top: 2px solid #7f0fff;
@@ -51,6 +56,9 @@ body {
   background-color: #8700c5;
   color: #f0c400;
 }
+.fontUp{
+  font-size: 2rem;
+}
 /*----------------------------------------------- Navbar ---------------------------------------------------*/
 
 /* Based on nav background colour */
@@ -59,7 +67,7 @@ body {
 .nav-link,
 .navbar-brand,
 .navbar-brand:hover {
-  font-size: 24px;
+  font-size: 1.25rem;
   /* color: #ece9f1; */
   color: #ffd319;
 }
@@ -87,9 +95,11 @@ body {
   color: #ffeda3;
 }
 
+.hardMode{
+  color: red
+}
 
-
-/* Card styling  */
+/*----------------------------------------------------- Card styling ----------------------------------------------------------------------------------- */
 #gameContainer{
   display: flex;
   flex-direction: row;
@@ -159,7 +169,67 @@ body {
 .item {
   width: 10rem;
 }
-/* --------------------------------------------- Footer ---------------------------------------------------------*/
+#rock{
+  margin-left: 0px;
+}
+#mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: inherit;
+}
+.info-text{
+  display: inline-block;
+}
+#game-outcome{
+ align-self: center;
+ position: absolute;
+
+ transform: translateY(50%);
+ font-size: 1.5rem;
+ font-weight: 700;
+ text-align: center;
+ transform: translateY(-150%)
+}
+#scores{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  font-size: 0.9rem;
+  transform: translateY(70%);
+
+}
+#game-state{
+  width: auto;
+  height: 21vh;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: column-reverse;
+  text-align: center;
+  align-self: center;
+  font-size: 0.8rem;
+  transform: translateY(-30%);
+}
+#current-streak-score{
+  left: 3vw;
+  bottom: 44vh;
+  position: initial;
+  text-align: center;
+}
+#highest-streak-score{
+  left: 3vw;
+  bottom: 40vh;
+  position: initial;
+  text-align: center;
+}
+
+/*-------------------------------------- Footer ---------------------------------------------------------*/
 footer {
   background-color: #452777;
   /* margin-top: auto; */
@@ -168,6 +238,10 @@ footer {
   bottom: 0px;
   width: 100%;
   margin-bottom: 0;
+}
+#footer{
+  position: absolute;
+  bottom:-25%
 }
 footer p {
   margin-bottom: 0px;
@@ -224,10 +298,13 @@ footer p {
   }
   
   #gameContainer {
-    height: calc(100vh - 170px) ;
+    height: calc(100vh - 70px) ;
     padding-bottom: 2vh;
   }
-
+  #footer{
+    position: inherit;
+    bottom:-25%
+  }
 
 }
 
@@ -242,6 +319,11 @@ footer p {
   }
  .card{
     margin-bottom: 3vh ;
+  }
+  #footer{
+    position: absolute;
+    bottom:-25%
+
   }
 }
 @media screen and (max-width: 448px){
@@ -274,5 +356,25 @@ footer p {
         18px #ffffffb9,
       /* 0 0 28px #ffd5191f, */ 0 0 40px #ffd5194b, 0 0 43px #ffd51957,
       0 0 43px #ffd51973, 0 0 66px #ffd51983;
+  }
+}
+@keyframes border-pulsate {
+  100% {
+    /* Larger blur radius */
+    box-shadow:   
+    /* 0 0 5px #ffffffb2, */
+      /* 0 0 5px #ffffff88, */ 0
+        0 20px #ffffffb9,
+      0 0 30px #7f0fff18, 0 0 41px #7f0fff41, 0 0 46px #7f0fff59,
+      0 0 51px #7f0fff8c, 0 0 76px #7f0fffbe;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    box-shadow:
+    /* 0 0 4.75px #ffffff88, */
+    /* 0 0 4px #ffffff88, */ 0 0
+        18px #ffffffb9,
+      /* 0 0 28px #ffd5191f, */ 0 0 40px #7f0fff41, 0 0 43px #7f0fff59,
+      0 0 43px  #7f0fff8c, 0 0 66px #7f0fffbe;
   }
 }
