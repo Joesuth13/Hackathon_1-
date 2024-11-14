@@ -73,24 +73,24 @@
      
      
          <div id="gameContainer">
-           <div data-selection="0" class="user-selection cardFlicker card borderGlowSurround bgColorGreyBlu flicker" id="rock">
+           <div data-selection="0" class="user-selection cardFlicker card borderGlowSurround bgColorGreyBlu flicker" id="rock" data-bs-toggle="tooltip" title="Rock crushes lizard and scissors">
              <img src="assets/img/rock.svg" alt="Rock">
              <p>Rock</p>
            </div>
-           <div data-selection="1" class="user-selection cardFlicker card borderGlowSurround bgColorOrange flicker" id="paper">
+           <div data-selection="1" class="user-selection cardFlicker card borderGlowSurround bgColorOrange flicker" id="paper" data-bs-toggle="tooltip" title="Paper covers rock and disproves spock">
              <img src="assets/img/paper.svg" alt="Paper">
              <p>Paper</p>
            </div>
-           <div data-selection="2" class="user-selection cardFlicker card borderGlowSurround bgColorPurple flicker" id="scissors">
+           <div data-selection="2" class="user-selection cardFlicker card borderGlowSurround bgColorPurple flicker" id="scissors" data-bs-toggle="tooltip" title="Scissors cuts paper and decapitates lizard">
              <img src="assets/img/scissor.svg" alt="Scissors">
              <p>Scissors</p>
            </div>
-           <div class="card" id="lizard">
+           <div data-selection="3" class="user-selection cardFlicker card borderGlowSurround bgColorYellow flicker" id="lizard" data-bs-toggle="tooltip" title="Lizard poisons Spock and eats Paper">
             <img src="assets/img/lizard.svg" alt="Lizard">
             <p>Lizard</p>
         </div>
-        <div class="card" id="spock">
-            <img src="assets/img/spock.png" alt="Spock">
+        <div data-selection="4" class="user-selection cardFlicker card borderGlowSurround bgColorPink flicker" id="spock" data-bs-toggle="tooltip" title="Spock vaporizes Rock and smashes Scissors">
+            <img src="assets/img/spock.svg" alt="Spock">
             <p>Spock</p>
         </div>
          </div>
@@ -128,10 +128,17 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+          const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+      });
+    </script>
+    
     <script
       src="https://kit.fontawesome.com/2689c86a07.js"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/lizardspock.js"></script>
   </body>
 </html>
