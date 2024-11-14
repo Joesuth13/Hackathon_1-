@@ -4,7 +4,7 @@ const winnerArray = [
     [-1, 1, 0],
   ];
   
-  const choiceStrings = ['rock', 'paper', 'scissors'];
+  const choiceStrings = ['rock', 'paper', 'scissor'];
   
   // Scores
   let currentStreakScore = 0;
@@ -28,7 +28,8 @@ const winnerArray = [
     const gameOutcomeParagraph = document.getElementById('game-outcome');
     const currentStreakScoreParagraph = document.getElementById('current-streak-score');
     const highestStreakScoreParagraph = document.getElementById('highest-streak-score');
-  
+    const computerCard = document.querySelector(".computer-card img");
+
     // Initialize score display
     currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentWins}</strong><br>Your score`;
     highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentLosses}</strong><br>CPU Score`;
@@ -36,6 +37,8 @@ const winnerArray = [
     function computerChoice() {
       const randomNumber = Math.floor(Math.random() * 3);
       computerChoiceParagraph.innerText = `Computer chose: ${choiceStrings[randomNumber]}`;
+      computerCard.setAttribute('src', `assets/img/${choiceStrings[randomNumber]}.svg`)
+      computerCard.setAttribute('alt', `${choiceStrings[randomNumber]}`)
       return randomNumber;
     }
   
