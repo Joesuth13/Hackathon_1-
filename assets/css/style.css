@@ -56,6 +56,9 @@ body {
   background-color: #8700c5;
   color: #f0c400;
 }
+.bgColorYellow {
+  background-color: #f0c400;
+}
 .fontUp{
   font-size: 2rem;
 }
