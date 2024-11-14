@@ -185,8 +185,8 @@ Describe how DALL-E was used for image generation, including examples of success
 
 ### **Advanced Features (Should-Haves)**
 
-* **score counters** Description of the implemented feature.  
-* **Feature 2:** Description of the implemented feature.
+* **score counters** to encourage the user to play multiple games, a score counter to track the user's streak of wins will be used. this same score counter can later be adpted to contain other types of score in other game-modes. 
+* **** Description of the implemented feature.
 
 (Include all should-have features)  
  **Guidance:** Include any advanced features you implemented during Phase 3: Should User Stories Implementation & Any Advanced Features. Explain how these features enhance user experience and their alignment with the acceptance criteria.
