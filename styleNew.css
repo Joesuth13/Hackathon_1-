@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* ------------------------------ Colors ----------------------------------  
+Yellow: #ffd319 | Background grey/blue: #222745 | Dark purple: #452777 | Orange: #ff901f | Bright Purple: #b000ff | Pink: #ff2975
+*/
+/*----------------------------------------------- General styles ---------------------------------------------------*/
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  background-color: #222745;
+  color: #ffd319;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.textGlow {
+  text-shadow: 
+      /* 0 0 2px #ffffff56, */
+      /* 0 0 5px #ffffff9c, */ 0 0
+      20px #ffffff8c,
+    0 0 30px #ffd5191f, 0 0 41px #ffd5194b, 0 0 46px #ffd5191f,
+    0 0 51px #ffd51952, 0 0 76px #ffd51975;
+}
+.flicker:hover {
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+.cardFlicker:hover {
+  animation: border-pulsate 0.11s ease-in-out infinite alternate;
+  
+}
+.borderGlowTop{
+  border-top: 2px solid #7f0fff;
+  box-shadow: 0 0 15px #7f0fff;
+}
+.borderGlowBottom{
+  border-bottom: 2px solid #7f0fff;
+  box-shadow: 0 0 15px #7f0fff;
+}
+.borderGlowSurround{
+  border: 2px solid #7f0fff;
+  box-shadow: 0 0 15px #7f0fff;
+}
+.bgColorOrange{
+  background-color: #ff901f;
+}
+.bgColorPink{
+  background-color: #ff2975;
+}
+.bgColorGreyBlu{
+  background-color: hsl(174, 25%, 71%);
+}
+.bgColorPurple{
+  background-color: #8700c5;
+  color: #f0c400;
+}
+.bgColorYellow {
+  background-color: #f0c400;
+}
+.fontUp{
+  font-size: 2rem;
+}
+/*----------------------------------------------- Navbar ---------------------------------------------------*/
+
+/* Based on nav background colour */
+/* https://maketintsandshades.com/#452777 */
+
+.nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+  font-size: 1.25rem;
+  /* color: #ece9f1; */
+  color: #ffd319;
+}
+
+.navbar {
+  background-color: #452777;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  color: #ffd319;
+  font-size: 32px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link:hover {
+  color: #ffe575;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffeda3;
+}
+
+.hardMode{
+  color: rgb(255, 128, 0)
+}
+
+/*----------------------------------------------------- Card styling ----------------------------------------------------------------------------------- */
+#gameContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card {
+  aspect-ratio: 2/2;
+  width: 11.5vw;
+  min-width: 110px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 2vw;
+  margin-bottom: 0px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+ 
+}
+
+
+/* -------------------------------------------- Game container ---------------------------------------------------*/
+
+#gameContainer {
+  height: calc(100vh - 100px) ;
+
+}
+#bestof{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin: 0;
+}
+.bestofcard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+  
+.item {
+  width: 10rem;
+}
+#rock{
+  margin-left: 0px;
+}
+#mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: inherit;
+}
+.info-text{
+  display: inline-block;
+}
+#game-outcome{
+ align-self: center;
+ position: absolute;
+ transform: translateY(50%);
+ font-size: 1.5rem;
+ font-weight: 700;
+ text-align: center;
+ transform: translateY(-150%)
+}
+#scores{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  font-size: 0.9rem;
+  transform: translateY(70%);
+
+}
+#game-state{
+  width: auto;
+  height: 21vh;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: column-reverse;
+  text-align: center;
+  align-self: center;
+  font-size: 0.8rem;
+  transform: translateY(-30%);
+}
+#current-streak-score{
+  left: 3vw;
+  bottom: 44vh;
+  position: initial;
+  text-align: center;
+}
+#highest-streak-score{
+  left: 3vw;
+  bottom: 40vh;
+  position: initial;
+  text-align: center;
+}
+
+/*-------------------------------------- Footer ---------------------------------------------------------*/
+footer {
+  background-color: #452777;
+  /* margin-top: auto; */
+  
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0;
+}
+#footer{
+  
+  bottom:-25%;
+}
+footer p {
+  margin-bottom: 0px;
+}
+#teamNames {
+  height: 100%;
+  width: 100%;
+  min-height: 7vh;
+}
+#teamNames li {
+  min-width: 90px;
+  max-width: 225px;
+  display: inline-block;
+}
+
+.devName {
+  display: flex;
+  font-size: 1.25rem;
+  background-color: #222745;
+  color: #ffd319;
+  text-decoration: none;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border: 2px solid #8c00ff;
+  border-radius: 5px;
+  padding-left: 0.25rem;
+  box-shadow:0 0 15px #8c00ff;
+
+}
+.devName i {
+  position: absolute;
+}
+#teamNames li a span {
+  display: inline-block;
+  width: 100%;
+}
+
+#copyright {
+  font-size: 0.6rem;
+}
+#footer-label {
+  font-size: 0.7rem;
+  align-self: center;
+}
+
+/*------------------------------------------------- Media query overrides ------------------------------*/
+@media screen and (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100%;
+  }
+  
+  #gameContainer {
+    height: calc(100vh - 70px) ;
+    padding-bottom: 2vh;
+  }
+  #footer{
+    position: inherit;
+    bottom:-25%
+  }
+
+}
+
+@media screen and (max-width: 564px) {
+  #teamNames li {
+    min-width: 150px;
+    position: relative;
+  }
+  #teamNames {
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+ .card{
+    margin-bottom: 3vh ;
+  }
+  #footer{
+    position: inherit;
+    bottom:-25%
+
+  }
+}
+@media screen and (max-width: 448px){
+ footer {
+  position: relative;
+ }
+ #gameContainer {
+  height: calc(100vh - 100px) ;
+
+}
+}
+
+
+/*------------------------------------------------------------------- Animations --------------------------------------------------------------------------------------------*/
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:   
+    /* 0 0 5px #ffffffb2, */
+      /* 0 0 5px #ffffff88, */ 0
+        0 20px #ffffffb9,
+      0 0 30px #ffd5191f, 0 0 41px #ffd5194b, 0 0 46px #ffd51934,
+      0 0 51px #ffd51956, 0 0 76px #ffd51980;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+    /* 0 0 4.75px #ffffff88, */
+    /* 0 0 4px #ffffff88, */ 0 0
+        18px #ffffffb9,
+      /* 0 0 28px #ffd5191f, */ 0 0 40px #ffd5194b, 0 0 43px #ffd51957,
+      0 0 43px #ffd51973, 0 0 66px #ffd51983;
+  }
+}
+@keyframes border-pulsate {
+  100% {
+    /* Larger blur radius */
+    box-shadow:   
+    /* 0 0 5px #ffffffb2, */
+      /* 0 0 5px #ffffff88, */ 0
+        0 20px #ffffffb9,
+      0 0 30px #7f0fff18, 0 0 41px #7f0fff41, 0 0 46px #7f0fff59,
+      0 0 51px #7f0fff8c, 0 0 76px #7f0fffbe;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    box-shadow:
+    /* 0 0 4.75px #ffffff88, */
+    /* 0 0 4px #ffffff88, */ 0 0
+        18px #ffffffb9,
+      /* 0 0 28px #ffd5191f, */ 0 0 40px #7f0fff41, 0 0 43px #7f0fff59,
+      0 0 43px  #7f0fff8c, 0 0 66px #7f0fffbe;
+  }
+}
