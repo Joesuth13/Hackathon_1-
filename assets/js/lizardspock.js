@@ -7,7 +7,7 @@ const winnerArray = [
 
 ];
 
-const choiceStrings = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+const choiceStrings = ['rock', 'paper', 'scissor', 'lizard', 'spock'];
 
 // Scores
 let currentStreakScore = 0;
@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const highestStreakScoreParagraph = document.getElementById(
         'highest-streak-score'
       );
+      const computerCard = document.querySelector(".computer-card img");
+
 
       // Get current streak score from local storage.
       const currentStreakScoreLocal = localStorage.getItem('current-streak-score');
@@ -60,6 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
       function computerChoice() {
         const randomNumber = Math.floor(Math.random() * 5);
         computerChoiceParagraph.innerText = `Computer chose: ${choiceStrings[randomNumber]}`;
+        computerChoiceParagraph.innerText = `Computer chose: ${choiceStrings[randomNumber]}`;
+        computerCard.setAttribute('src', `assets/img/${choiceStrings[randomNumber]}.svg`)
+        computerCard.setAttribute('alt', `${choiceStrings[randomNumber]}`)
         return randomNumber;
       }
 
