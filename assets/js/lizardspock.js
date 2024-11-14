@@ -1,7 +1,11 @@
 const winnerArray = [
-    [0, -1, 1],
-    [1, 0, -1],
-    [-1, 1, 0],
+    [0, -1, 1, 1, -1],
+    [-1, 0, 1, 1, -1],
+    [1, -1, 0, 1, -1],
+    [1, -1, 1, 0, -1],
+    [-1, -1, 1, 1, 0],
+   
+
   ];
   
   const choiceStrings = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
@@ -43,7 +47,7 @@ const winnerArray = [
     highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${highestStreakScore}</strong><br>Highest Streak`;
   
     function computerChoice() {
-      const randomNumber = Math.floor(Math.random() * 3);
+      const randomNumber = Math.floor(Math.random() * 5);
       computerChoiceParagraph.innerText = `Computer chose: ${choiceStrings[randomNumber]}`;
       return randomNumber;
     }
