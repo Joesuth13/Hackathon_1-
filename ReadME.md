@@ -213,6 +213,7 @@ We checked our Javascript documents with JShint and found no issues, though, giv
 
 <img src="assets/img/html-val.png" alt="Screenshot showing the successful result of HTML validator">
 
+<img src="assets/img/css-val.png" alt="Screenshot showing the successful result of CSS validator">
 
 ## **Deployment**
 
