@@ -141,6 +141,13 @@ body {
  
 }
 
+.computer-card {
+  background-color: #452777;
+  transform: none !important;
+  cursor: auto;
+  width: 23vw;
+  min-width: 180px;
+}
 
 /* -------------------------------------------- Game container ---------------------------------------------------*/
 
