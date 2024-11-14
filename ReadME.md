@@ -227,7 +227,9 @@ Effective use of AI tools, including GitHub Copilot and DALL-E, and how they con
 
 ### **Challenges**
 
-Describe any challenges faced when integrating AI-generated content and how they were addressed.
+Our greatest challenges was grasping Git collaboration, we kept running into problems with merge conflicts which in some cases presented a chance of our main branch being overwritten with an older revision.
+
+We also spent some time wrestling with Bootstrap to achieve the look a feel we desired.
 
 ### **Final Thoughts**
 
