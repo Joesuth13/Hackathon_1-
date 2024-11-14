@@ -302,7 +302,7 @@ footer p {
     padding-bottom: 2vh;
   }
   #footer{
-    position: absolinheriute;
+    position: inherit;
     bottom:-25%
   }
 
