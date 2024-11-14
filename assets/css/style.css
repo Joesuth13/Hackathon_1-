@@ -145,7 +145,7 @@ body {
 /* -------------------------------------------- Game container ---------------------------------------------------*/
 
 #gameContainer {
-  height: calc(100vh - 200px) ;
+  height: calc(100vh - 100px) ;
 
 }
 #bestof{
@@ -233,15 +233,15 @@ body {
 footer {
   background-color: #452777;
   /* margin-top: auto; */
-  position: absolute;
+  
   left: 0px;
   bottom: 0px;
   width: 100%;
   margin-bottom: 0;
 }
 #footer{
-  position: absolute;
-  bottom:-25%
+  
+  bottom:-25%;
 }
 footer p {
   margin-bottom: 0px;
@@ -321,7 +321,7 @@ footer p {
     margin-bottom: 3vh ;
   }
   #footer{
-    position: absolute;
+    position: inherit;
     bottom:-25%
 
   }
@@ -331,7 +331,7 @@ footer p {
   position: relative;
  }
  #gameContainer {
-  height: calc(100vh - 200px) ;
+  height: calc(100vh - 100px) ;
 
 }
 }

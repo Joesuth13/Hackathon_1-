@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
   if (currentStreakScoreLocal) {
     currentStreakScore = parseInt(currentStreakScoreLocal);
   }
-  currentStreakScoreParagraph.innerText = `Current Streak: ${currentStreakScore}`;
+  currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
 
   // Get highest streak score from local storage.
   const highestStreakScoreLocal = localStorage.getItem('highest-streak-score');
   if (highestStreakScoreLocal) {
     highestStreakScore = parseInt(highestStreakScoreLocal);
   }
-  highestStreakScoreParagraph.innerText = `Highest Streak: ${highestStreakScore}`;
+  highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${highestStreakScore}</strong><br>Highest Streak`;
 
   function computerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         currentStreakScore++;
         localStorage.setItem('current-streak-score', currentStreakScore);
-        currentStreakScoreParagraph.innerText = `Current Streak: ${currentStreakScore}`;
+        currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
 
         if (currentStreakScore > highestStreakScore) {
           highestStreakScore = currentStreakScore;
           localStorage.setItem('highest-streak-score', highestStreakScore);
-          highestStreakScoreParagraph.innerText = `Highest Streak: ${highestStreakScore}`;
+          highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${highestStreakScore}</strong><br>Highest Streak`;
         }
 
         break;
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         currentStreakScore = 0;
         localStorage.setItem('current-streak-score', '0');
-        currentStreakScoreParagraph.innerText = `Current Streak: ${currentStreakScore}`;
+        currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentStreakScore}</strong><br>Current Streak`;
 
         break;
 
@@ -100,3 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
     checkWin(userPlay, computerPlay);
   }
 });
+
+
+

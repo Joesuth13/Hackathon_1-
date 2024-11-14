@@ -99,7 +99,7 @@ const winnerArray = [
     const userPlay = userChoice(this.getAttribute('data-selection'));
     const computerPlay = computerHardChoice();
     checkWin(userPlay, computerPlay);
-    console.log("click acknowledged")
+    console.log("game functions complete")
   }
 
 
