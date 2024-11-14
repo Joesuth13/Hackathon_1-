@@ -58,19 +58,38 @@
     </nav>
 
 
-    <main id="bestof">
-        <div class="bestofcard">
-            
-            <h1>Coming soon</h1>
-        
+    <main id="mainContainer">
+
+      <div id="game-state">
+         <p id="user-choice" class="info-text textGlow">Pick one!</p>
+         <p id="computer-choice" class="info-text textGlow">Waiting...</p>
+       </div>
+         <p id="game-outcome" class="textGlow info-text">Best of 5! </p>
+         <div id="scores">
+           <p id="current-streak-score" class="info-text textGlow">0 <br> Your Score</p>
+           <p id="highest-streak-score" class="info-text textGlow">0 <br> CPU Score</p>
          </div>
         
+         <div id="gameContainer">
+           <div data-selection="0" class="user-selection cardFlicker card borderGlowSurround bgColorGreyBlu flicker" id="rock">
+             <img src="assets/img/rock.svg" alt="Rock">
+             <p>Rock</p>
+           </div>
+           <div data-selection="1" class="user-selection cardFlicker card borderGlowSurround bgColorOrange flicker" id="paper">
+             <img src="assets/img/paper.svg" alt="Paper">
+             <p>Paper</p>
+           </div>
+           <div data-selection="2" class="user-selection cardFlicker card borderGlowSurround bgColorPurple flicker" id="scissors">
+             <img src="assets/img/scissor.svg" alt="Scissors">
+             <p>Scissors</p>
+           </div>
+         </div>
+       </main>
+  
+  
 
 
-    </main>
-  
-  
-  
+
   <div class="container g-0">
     <footer class="borderGlowTop d-flex flex-wrap justify-content-center align-items-center py-1 flex-column">
      
@@ -105,6 +124,6 @@
       src="https://kit.fontawesome.com/2689c86a07.js"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bestOf5.js"></script>
   </body>
 </html>

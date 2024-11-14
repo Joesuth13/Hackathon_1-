@@ -89,16 +89,16 @@ const winnerArray = [
       checkWin(userPlay, computerPlay);
     }
   
-//     function resetGame() {
-//       // Reset the win counters and game number for a new Best of 5 game
-//       currentWins = 0;
-//       currentLosses = 0;
-//       gameNumber = 1;
+    function resetGame() {
+      // Reset the win counters and game number for a new Best of 5 game
+      currentWins = 0;
+      currentLosses = 0;
+      gameNumber = 1;
   
-//       // Update the display to show reset scores
-//       currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentWins}</strong><br>Your score`;
-//       highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentLosses}</strong><br>CPU Score`;
-//       gameOutcomeParagraph.innerText = 'Rock, Paper, Scissors'; // Reset outcome message
-//     }
-//   });
+      // Update the display to show reset scores
+      currentStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentWins}</strong><br>Your score`;
+      highestStreakScoreParagraph.innerHTML = `<strong class="fontUp">${currentLosses}</strong><br>CPU Score`;
+      gameOutcomeParagraph.innerText = 'Rock, Paper, Scissors'; // Reset outcome message
+    }
+  });
   
