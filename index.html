@@ -16,7 +16,7 @@
   <body>
     <nav class="navbar navbar-expand-lg borderGlowBottom">
       <div class="container-fluid">
-        <a class="textGlow flicker navbar-brand" href="#"
+        <a class="textGlow flicker navbar-brand" href="index.html"
           >Rock Paper Scissors</a
         >
         <button
@@ -36,7 +36,7 @@
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center gap-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Free Play</a
               >
             </li>
@@ -49,7 +49,7 @@
             <li class="nav-item">
               <a class="nav-link" href="lizardspock.html">Lizard & Spock</a>
             </li>
-            <li class="nav-item"></li>
+            <li class="nav-item">
               <a class="nav-link" href="hardMode.html">Hard mode</a>
             </li>
           </ul>
@@ -57,22 +57,35 @@
       </div>
     </nav>
 
- <main id="gameContainer">
-   
-      <div data-selection="0" class="card borderGlowSurround bgColorGreyBlu flicker" id="rock">
-          <img src="assets/img/rock.svg" alt="Rock">
-          <p>Rock</p>
-      </div>
-      <div data-selection="1" class="card borderGlowSurround bgColorOrange flicker" id="paper">
-          <img src="assets/img/paper.svg" alt="Paper">
-          <p>Paper</p>
-      </div>
-      <div data-selection="2" class="card borderGlowSurround bgColorPurple flicker" id="scissors">
-          <img src="assets/img/scissor.svg" alt="Scissors">
-          <p>Scissors</p>
-      </div>
-    
-  </main>
+    <main id="mainContainer">
+
+      <div id="game-state">
+         <p id="user-choice" class="info-text textGlow">Pick one!</p>
+         <p id="computer-choice" class="info-text textGlow">Waiting...</p>
+       </div>
+         <p id="game-outcome" class="textGlow info-text">Rock, Paper, Scissors </p>
+         <div id="scores">
+           <p id="current-streak-score" class="info-text textGlow">0 <br> Streak score here</p>
+           <p id="highest-streak-score" class="info-text textGlow">0 <br> high score here</p>
+         </div>
+        
+     
+     
+         <div id="gameContainer">
+           <div data-selection="0" class="user-selection cardFlicker card borderGlowSurround bgColorGreyBlu flicker" id="rock">
+             <img src="assets/img/rock.svg" alt="Rock">
+             <p>Rock</p>
+           </div>
+           <div data-selection="1" class="user-selection cardFlicker card borderGlowSurround bgColorOrange flicker" id="paper">
+             <img src="assets/img/paper.svg" alt="Paper">
+             <p>Paper</p>
+           </div>
+           <div data-selection="2" class="user-selection cardFlicker card borderGlowSurround bgColorPurple flicker" id="scissors">
+             <img src="assets/img/scissor.svg" alt="Scissors">
+             <p>Scissors</p>
+           </div>
+         </div>
+       </main>
   
   
   
