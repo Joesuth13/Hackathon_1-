@@ -211,6 +211,8 @@ We checked each html document individually using w3c markup validator, we found 
 
 We checked our Javascript documents with JShint and found no issues, though, given more time we would work as a team to improve the hardMode.js layout and structure to make it easier to read and understand.
 
+<img src="assets/img/html-val.png" alt="Screenshot showing the successful result of HTML validator">
+
 
 ## **Deployment**
 
