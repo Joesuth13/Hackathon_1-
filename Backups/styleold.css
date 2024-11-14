@@ -141,13 +141,19 @@ body {
  
 }
 
+.computer-card {
+  background-color: #452777;
+  transform: none !important;
+  cursor: auto;
+  width: 23vw;
+  min-width: 180px;
+}
 
 /* -------------------------------------------- Game container ---------------------------------------------------*/
 
-#gameContainer {
-  height: calc(100vh - 100px) ;
 
-}
+
+
 #bestof{
   display: flex;
   justify-content: center;
@@ -203,7 +209,7 @@ body {
 
 }
 #game-state{
-  width: auto;
+  /* width: auto;
   height: 21vh;
   position: absolute;
   display: flex;
@@ -212,8 +218,8 @@ body {
   flex-direction: column-reverse;
   text-align: center;
   align-self: center;
-  font-size: 0.8rem;
-  transform: translateY(-30%);
+  font-size: 0.8rem; */
+  /* transform: translateY(-30%); */
 }
 #current-streak-score{
   left: 3vw;
