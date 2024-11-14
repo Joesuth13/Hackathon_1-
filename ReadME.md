@@ -201,8 +201,7 @@ ChatGPT was used to change the Best of 3 Mode to Best of 5.
 
 ### **Testing Results**
 
-To test our site for accessibility and performance, we used a web version of the lighthouse service found at https://www.webpagetest.org/result/241114_BiDcYM_6F4/#PWA.
-we are please with the result
+To test our site for accessibility and performance we used WebPageTest, we are please with the [result](https://www.webpagetest.org/result/241114_BiDcYM_6F4).
 
 <img src="assets/img/lighthouse-report.png" alt="Lighthouse report showing performance score of 94, accessibility score of 100, best practice score of 100, SEO score of 92 and PWA score of 38">
 
