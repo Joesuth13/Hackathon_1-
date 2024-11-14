@@ -58,17 +58,43 @@
       </div>
     </nav>
 
+    <main id="mainContainer">
 
-    <main id="bestof">
-        <div class="bestofcard">
-            
-            <h1>Coming soon</h1>
-        
+      <div id="game-state">
+         <p id="user-choice" class="info-text textGlow">Pick one!</p>
+         <p id="computer-choice" class="info-text textGlow">Waiting...</p>
+       </div>
+         <p id="game-outcome" class="textGlow info-text">Rock, Paper, Scissors </p>
+         <div id="scores">
+           <p id="current-streak-score" class="info-text textGlow">0 <br> Streak score here</p>
+           <p id="highest-streak-score" class="info-text textGlow">0 <br> high score here</p>
          </div>
         
-
-
-    </main>
+     
+     
+         <div id="gameContainer">
+           <div data-selection="0" class="user-selection cardFlicker card borderGlowSurround bgColorGreyBlu flicker" id="rock">
+             <img src="assets/img/rock.svg" alt="Rock">
+             <p>Rock</p>
+           </div>
+           <div data-selection="1" class="user-selection cardFlicker card borderGlowSurround bgColorOrange flicker" id="paper">
+             <img src="assets/img/paper.svg" alt="Paper">
+             <p>Paper</p>
+           </div>
+           <div data-selection="2" class="user-selection cardFlicker card borderGlowSurround bgColorPurple flicker" id="scissors">
+             <img src="assets/img/scissor.svg" alt="Scissors">
+             <p>Scissors</p>
+           </div>
+           <div class="card" id="lizard">
+            <img src="assets/img/lizard.svg" alt="Lizard">
+            <p>Lizard</p>
+        </div>
+        <div class="card" id="spock">
+            <img src="assets/img/spock.png" alt="Spock">
+            <p>Spock</p>
+        </div>
+         </div>
+       </main>
   
   
   
