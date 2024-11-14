@@ -115,8 +115,11 @@ As a User I can see current winning streak so that I remain engaged and feel rew
 
 ### **User Story 2:** 
 
-As a User I can choose nerd mode so that I can be kept engaged 
-List: [https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il\_fullxfull.4417678458\_9n6c.jpg](https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il_fullxfull.4417678458_9n6c.jpg)Diagram: [https://static.wixstatic.com/media/903056\_39aa9523c70a428684be9744580b0b1b\~mv2.png/v1/fill/w\_568,h\_568,al\_c,q\_85,usm\_0.66\_1.00\_0.01,enc\_auto/903056\_39aa9523c70a428684be9744580b0b1b\~mv2.png](https://static.wixstatic.com/media/903056_39aa9523c70a428684be9744580b0b1b~mv2.png/v1/fill/w_568,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/903056_39aa9523c70a428684be9744580b0b1b~mv2.png) 
+As a User I can choose nerd mode so that I can be kept engaged
+
+[Spock & Lizard List](https://i.etsystatic.com/15843844/r/il/dcadfa/4417678458/il_fullxfull.4417678458_9n6c.jpg)
+
+[Spock & Lizard Diagram](https://static.wixstatic.com/media/903056_39aa9523c70a428684be9744580b0b1b~mv2.png/v1/fill/w_568,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/903056_39aa9523c70a428684be9744580b0b1b~mv2.png) 
 
 **Acceptance criteria:**
 * Spock & Lizard can be played
@@ -157,8 +160,6 @@ Our colour palette aimed to remind users of the retro gaming aesthetic. The brig
 
 **Font Family:**
 
-[https://fonts.google.com/specimen/Jersey+10?query=jersey](https://fonts.google.com/specimen/Jersey+10?query=jersey)
-
 [https://fonts.google.com/specimen/Orbitron?preview.text=Rock%20paper%20scissors\&categoryFilters=Appearance:%2FTheme%2FTechno](https://fonts.google.com/specimen/Orbitron?preview.text=Rock%20paper%20scissors&categoryFilters=Appearance:%2FTheme%2FTechno)
 
 The font we decided to use aligns with our retro theme, reminding players of old school gaming.
@@ -166,13 +167,6 @@ The font we decided to use aligns with our retro theme, reminding players of old
 ### **Accessibility Considerations**
 
 some care was taken in the design stage of the project to ensure that all essential text and gameplay elements have sufficient contrast against any background colours.
-
-## **AI Tools Usage**
-
-### **DALL-E**
-
-Describe how DALL-E was used for image generation, including examples of successes and challenges.  
- **Guidance:** Specifically mention how you used DALL-E for image generation and the impact this had on your design process.
 
 ## **Features Implementation**
 
@@ -201,10 +195,7 @@ Describe how DALL-E was used for image generation, including examples of success
 
 ## **AI Tools Usage**
 
-### **GitHub Copilot**
-
-Describe how GitHub Copilot assisted in coding, including any challenges or adjustments needed.  
- **Guidance:** Reflect on how GitHub Copilot assisted in coding, particularly any challenges or adjustments that were needed to align with project goals.
+ChatGPT was used to change the Best of 3 Mode to Best of 5.
 
 ## **Testing and Validation**
 
@@ -222,27 +213,11 @@ We checked each html document individually using w3c markup validator, we found 
 We checked our Javascript documents with JShint and found no issues, though, given more time we would work as a team to improve the hardMode.js layout and structure to make it easier to read and understand.
 
 
-## **AI Tools Usage**
-
-### **GitHub Copilot**
-
-Brief reflection on the effectiveness of using AI tools for debugging and validation.  
- **Guidance:** Reflect on how GitHub Copilot assisted with debugging and validation, particularly any issues it helped resolve.
-
 ## **Deployment**
 
 ### **Deployment Process**
 
-Briefly describe the deployment process to GitHub Pages or another cloud platform.  
- Mention any specific challenges encountered during deployment.  
- **Guidance:** Describe the steps you took to deploy your website during Phase 4: Final Testing, Debugging & Deployment, including any challenges encountered.
-
-## **AI Tools Usage**
-
-### **Reflection**
-
-Describe the role AI tools played in the deployment process, including any benefits or challenges.  
- **Guidance:** Reflect on how AI tools assisted with the deployment process, particularly how they streamlined any tasks or presented challenges.
+Deployed using GitHub Pages grabbing from main branch.
 
 ## **Reflection on Development Process**
 
@@ -261,20 +236,22 @@ Provide any additional insights gained during the project and thoughts on the ov
 
 ## **Code Attribution**
 
-Properly attribute any external code sources used in the project (excluding GitHub Copilot-generated code).  
- **Guidance:** Document any external code sources used throughout the entire project, especially during Phase 2 and Phase 3\. Exclude GitHub Copilot-generated code from attribution.
-
 **Flaticon License (rock paper scissors logo)-** Rock paper scissors icons created by Freepik \- Flaticon
 
 Free for personal and commercial purpose with attribution. [More info](https://www.flaticon.com/free-icon/rock-paper-scissors_6729598?term=rock+paper+scissors&page=1&position=11&origin=search#)
 
 **OpenMoji  (Rock icon, paper icon, scissors icon,)** 
 
-[**https://css-tricks.com/how-to-create-neon-text-with-css/**](https://css-tricks.com/how-to-create-neon-text-with-css/)
+Licensed under: Creative Commons Share Alike License 4.0
 
-**(Neon glow effect and flicker animation walkthrough)**
+[**https://openmoji.org**](https://openmoji.org)
+
+**Neon glow effect and flicker animation walkthrough**
+
+[**https://css-tricks.com/how-to-create-neon-text-with-css/**](https://css-tricks.com/how-to-create-neon-text-with-css/)
 
 ## **Future Improvements**
 
-Briefly discuss potential future improvements or features that could be added to the project.  
-**Guidance:** Reflect on potential enhancements that could be made to the project after Phase 4: Final Testing, Debugging & Deployment. These could be Could user story features you didn’t have time to implement or improvements based on testing feedback.
+- Adding a multiplayer mode.
+- Using a single JS file to handle multiple game modes.
+- Further improvements to UI aesthetics.
